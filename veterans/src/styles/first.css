@@ -1,0 +1,62 @@
+.main {
+    width: 95%;
+    display: flex;
+}
+
+.main-first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.collapses:not(.open) {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.collapses.open {
+    max-height: 300px;
+    transition: max-height 0.5s ease;
+}
+
+.text {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+}
+
+.title {
+    text-align: center;
+}
+
+.title-sizm {
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+hr {
+    margin: 0;
+}
+
+.main-dcv:not(.open) {
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    color: black;
+}
+.main-dcv:hover {
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    cursor: pointer;
+}
+.collapses > div {
+    margin: 20px;
+}
+
+.title-small {
+    margin-left: 20px;
+}
+
+.title-status{
+    margin-left: 20px;
+    padding-top: 20px;
+}
